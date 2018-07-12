@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleGraphFaceDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-sL-mB6" userLabel="TemporaryImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-k0-x3n" userLabel="FinalImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SiW-sL-mB6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Ibe-po-atQ"/>
+                            <constraint firstItem="SiW-sL-mB6" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Obf-LD-FSi"/>
+                            <constraint firstItem="9dB-k0-x3n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tq7-Oz-44K"/>
+                            <constraint firstItem="9dB-k0-x3n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UED-fZ-khy"/>
+                            <constraint firstItem="9dB-k0-x3n" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="j0J-mn-RQl"/>
+                            <constraint firstItem="SiW-sL-mB6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jzo-sr-10C"/>
+                            <constraint firstItem="SiW-sL-mB6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s54-jZ-mZF"/>
+                            <constraint firstItem="9dB-k0-x3n" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="uUo-2b-sWe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JPj-1t-nhY"/>
+                    </view>
+                    <connections>
+                        <outlet property="finalImageView" destination="SiW-sL-mB6" id="i1s-E6-pQW"/>
+                        <outlet property="intermediateImageView" destination="9dB-k0-x3n" id="zr5-az-Jih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
